@@ -1,0 +1,115 @@
+.main__container{
+    flex-direction: column;
+}
+
+.cafes{
+    width: 100%;
+    margin-bottom: calc(var(--min-gap) * 3);
+    flex-direction: column;
+    gap: calc(var(--min-gap) * 3);
+}
+
+.cafe{
+    width: 100%;
+    max-width: 1720px;
+    min-height: 650PX;
+    margin: 0;
+    padding-top: calc(var(--min-gap) * 2);
+    padding-right: calc(100% - (var(--min-gap) * 59));
+    padding-bottom: calc(var(--min-gap) * 2);
+    padding-left: calc(var(--min-gap) * 3);
+    flex-direction: column;
+
+    font-size: 28px;
+
+    color: var(--cyan);
+    background-color: var(--white);
+    background-position: 702px;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 5px;
+}
+
+.revers{
+    padding-right: calc(var(--min-gap) * 3) ;
+    padding-left: calc(100% - (var(--min-gap) * 65));
+    align-items: flex-end;
+    text-align: right;    
+    background-position: right 756px top 0;
+}
+
+.cafe__address{
+    margin-right: auto;
+    margin-bottom: calc(var(--min-gap) * 2 + 2px);
+    padding-bottom: calc(var(--min-gap) - 3px);
+    border-bottom: 3px solid var(--orange);
+
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.revers .cafe__address{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.cafe__title__section{
+    margin-bottom: 6px;
+}
+
+.cafe__phoneNumbers{
+    margin-right: auto;
+    margin-bottom: calc(37px - 3px - 22px);
+    padding-bottom: 22px;
+    border-bottom: 3px solid var(--cyan);
+    flex-direction: column;
+    gap:6px;
+}
+
+.phoneNumber__link{
+    text-shadow: none;
+}
+
+.phoneNumber__link:focus{
+    color: var(--orange);
+}
+
+.phoneNumber__link:hover{
+    color: var(--orange);
+}
+
+.phoneNumber__link:active{
+    color: var(--cyan-dark);
+}
+
+.revers .cafe__phoneNumbers{
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+.cafe__workSchedule{
+    flex-direction: column;
+    gap:5px;
+}
+
+.cafe-1{
+    background-image: url("../img/decor/Contact_01.png");
+}
+
+.cafe-2{
+    background-image: url("../img/decor/Contact_02.png");
+}
+
+.cafe-3{
+    background-image: url("../img/decor/Contact_03.png");
+}
+
+#map{
+    width: 100%;
+    max-width: 1720px;
+    min-height: 650px;
+
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 5px;
+}

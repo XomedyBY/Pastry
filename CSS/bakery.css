@@ -1,0 +1,140 @@
+.cards__list{
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: calc(var(--min-gap) * 3);
+
+    font-size: 36px;
+}
+
+.card{
+    width: 100%;
+    max-width: 1720px;
+    min-height: 650PX;
+    margin: 0;
+    padding-top: calc(var(--min-gap) * 6);
+    padding-right: calc(100% - (var(--min-gap) * 64) + 12px);
+    padding-bottom: calc(var(--min-gap) * 4);
+    padding-left: calc(var(--min-gap) * 3);
+    flex-direction: column;
+
+    background-color: var(--white);
+    background-position: 764px;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 5px;
+}
+
+.card-revers{
+    align-items: end;
+    padding-right: calc(var(--min-gap) * 3);
+    padding-left:  calc(100% - (var(--min-gap) * 64) + 12px);
+    background-position: right 693px top 0;
+}
+
+.card__title{
+    margin-right: auto;
+    margin-bottom: calc(var(--min-gap) * 3);
+    padding-bottom: 9px;
+
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1;
+
+    border-bottom: 3px solid var(--orange);
+    color: var(--orange);
+}
+
+.card-revers .card__title{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.card__descr{
+    max-width: 630px;
+
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-left: 13px;
+
+    line-height: 1.17;
+}
+.card-revers .card__descr{
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 13px;
+    text-align: right;
+}
+
+.card__link{
+    display: block;
+
+    max-width: 525px;
+    max-height: 78px;
+    width: 100%;
+
+    margin-left: 28px;
+    padding: 13px;
+
+
+    font-size: 48px;
+    text-shadow: none;
+    text-transform: uppercase;
+
+    border: 3px solid var(--orange);
+    color: var(--orange);
+
+    transition: ease-in-out color 500ms,
+    ease-in-out background-color 500ms;
+
+    transform: skewX(-21.675deg);
+}
+
+.card-revers .card__link{
+    margin-left: 0;
+    margin-right: 28px;
+    transform: skewX(21.675deg);
+}
+
+.card__link:focus{
+    outline: none;
+}
+
+.card__link:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.card__link:active{
+    color: var(--cyan-dark);
+    background-color: var(--orange);
+}
+
+.link_text{
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    transform: skewX(21.675deg);
+}
+
+.card-revers .link_text{
+    transform: skewX(-21.675deg);
+}
+
+.card-1{
+    background-image: url(../img/decor/Bakery_01.png);
+}
+
+.card-2{
+    background-image: url(../img/decor/Bakery_02.png);
+}
+
+.card-3{
+    background-image: url(../img/decor/Bakery_03.png);
+}
+
+.card-3 .card__title{
+    margin-right: 70px;
+}

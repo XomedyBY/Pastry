@@ -1,0 +1,103 @@
+.categories{
+    margin: 0;
+    padding: 0 calc(var(--min-gap) * 2);
+    flex-direction: column;
+    justify-content: center;
+
+    gap: calc(var(--min-gap) * 3);
+}
+
+.category{
+    --cards: 4;
+    flex-direction: column;
+}
+
+.category__title{
+    margin-right: auto;
+    margin-bottom: calc(var(--min-gap) * 4);
+    padding-bottom: calc(var(--min-gap) * 1 - 2px);
+    border-bottom: 3px solid var(--orange);
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.products__list{
+    gap: calc(var(--min-gap) * 3);
+}
+
+.product{
+    width: calc((100% - ((var(--min-gap) * 3 ) * (var(--cards) - 1))) / var(--cards) + 1px);
+    max-width: 390px;
+    min-height: 520px;
+    padding: calc(var(--min-gap) * 21) calc(var(--min-gap) * 1) calc(var(--min-gap) * 2);
+    border: 1px solid var(--cyan-dark);
+    flex-direction: column;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 5px;
+    transition: ease-in-out transform 500ms;
+}
+
+.product:hover{
+    transform: scale(110%, 110%)
+    translateY(calc(var(--min-gap) * (-2)));
+}
+
+.product-1{
+    background-image: url(../img/menu/WheatBreadjpg.jpg);
+}
+
+.product-2{
+    background-image: url(../img/menu/OatmealCookies.jpg);
+}
+
+.product-3{
+    background-image: url(../img/menu/CroissantWithoutFilling.jpg);
+}
+
+.product__title{
+    margin-bottom: calc(var(--min-gap) * 1 + 2px);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.product__descr{
+    margin-bottom: auto;
+    line-height: 1.1;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.product__btn{
+    width: calc(100% - ((var(--min-gap) * 3) * 2));
+    margin: 0 auto;
+    padding: calc(var(--min-gap) / 2);
+    border: 3px solid var(--orange);
+    color: var(--orange);
+    transform: skewX(-21.675deg);
+    transition: ease-in-out color 500ms,
+    ease-in-out background-color 500ms;
+}
+
+.product__btn:focus{
+    outline: none;
+}
+
+.product__btn:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.product__btn:active{
+    color: var(--cyan-dark);
+    background-color: var(--orange);
+}
+
+.product__btn__text{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skewX(21.675deg);
+}
